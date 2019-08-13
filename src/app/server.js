@@ -7,7 +7,7 @@ app.use(express.static('dist/angular-deploy'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-  res.sendFile(path.join('dist/angular-deploy/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/angular-deploy/index.html'));
 });
 
 // default Heroku PORT
